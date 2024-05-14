@@ -70,4 +70,8 @@ public class QuestionService {
             throw new IllegalArgumentException("Question not found with id: " + id);
         }
     }
+
+    public void deleteQuestion(Integer id){
+        questionDao.deleteById(id);
+    }
 }
